@@ -35,16 +35,14 @@ This guide explains how to install the necessary dependencies for the project us
 
 #### Installation Steps
 
-Create a virtual environment (`.venv`) using `pip` and set up your project dependencies, follow these steps:
-
-### 1. **Create a Virtual Environment Manually**  
+1. **Create a Virtual Environment**  
    First, create a virtual environment using the `venv` module that comes with Python:
    ```bash
    python -m venv .venv
    ```
    This will create a `.venv` directory in your project, which will hold the virtual environment.
 
-### 2. **Activate the Virtual Environment**  
+2. **Activate the Virtual Environment**  
    After creating the virtual environment, you need to activate it:
 
    - **On Windows:**
@@ -58,13 +56,13 @@ Create a virtual environment (`.venv`) using `pip` and set up your project depen
 
    After activation, you should see `(.venv)` in your terminal prompt, indicating that the virtual environment is active.
 
-### 3. **Install `pipenv` from `requirements.txt`**  
+3. **Install `pipenv` from `requirements.txt`**  
    If `pipenv` is listed as a dependency in your `requirements.txt`, install it with the following command:
    ```bash
    pip install -r requirements.txt
    ```
 
-### 4. **Install Dependencies from `Pipfile.lock`**  
+4. **Install Dependencies from `Pipfile.lock`**  
    Once `pipenv` is installed, you can use it to install the project dependencies:
 
    - To install both regular and development dependencies from `Pipfile.lock`, use:
@@ -76,4 +74,14 @@ Create a virtual environment (`.venv`) using `pip` and set up your project depen
      pipenv install
      ```
 
-Now, your virtual environment is set up and dependencies are installed. You can continue developing within this isolated environment.
+---
+
+### 3. Start the Application
+
+Once the setup is complete, you can start the application by running the following command from the root directory:
+
+```bash
+python main.py
+```
+
+This will initialize and start the application using the configurations defined in your `.env` file. Ensure your `.env` file is properly configured before running the command.
