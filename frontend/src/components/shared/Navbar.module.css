@@ -1,0 +1,23 @@
+.NavbarContainer{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+
+.NavTitle{
+    font-size: 32px;
+    margin-bottom: 4px;
+}
+
+.NavDesc{
+    font-size: 18px;
+    color: var(--muted-foreground);
+}
+
+.AvatarContainer{
+    cursor: pointer;
+    font-weight: bold;
+}
